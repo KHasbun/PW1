@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Solicitud de Préstamos Estudiantiles</title>
+</head>
+<body>
+    <h1>Formulario de Solicitud de Préstamos Estudiantiles</h1>
+    <form>
+        <label for="nombre-completo">Nombre Completo:</label>
+        <input type="text" id="nombre-completo" name="nombre-completo" required><br><br>
+
+        <label for="email">Dirección de Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br><br>
+
+        <label for="direccion">Dirección Actual:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="Ciudad de México">Ciudad de México</option>
+            <option value="Coahuila">Coahuila</option>
+            <option value="Colima">Colima</option>
+            <option value="Durango">Durango</option>
+            <!-- Añadir más estados según sea necesario -->
+        </select><br/>
+
+        <label for="codigo-postal">Código Postal:</label><br/>
+        <input type="text" id="codigo-postal" name="codigo-postal" required><br/>
+
+        <label>Nivel de Educación Actual:</label><br>
+        <input type="radio" id="preparatoria" name="educacion" value="Preparatoria" required>
+        <label for="preparatoria">Preparatoria</label><br>
+        <input type="radio" id="licenciatura" name="educacion" value="Licenciatura" required>
+        <label for="licenciatura">Licenciatura</label><br>
+        <input type="radio" id="maestria" name="educacion" value="Maestría" required>
+        <label for="maestria">Maestría</label><br>
+        <input type="radio" id="doctorado" name="educacion" value="Doctorado" required>
+        <label for="doctorado">Doctorado</label><br/>
+
+        <label>Programa de Estudio:</label><br>
+        <input type="radio" id="ciencias-computacion" name="programa" value="Ciencias de la Computación" required>
+        <label for="ciencias-computacion">Ciencias de la Computación</label><br>
+        <input type="radio" id="ingenieria" name="programa" value="Ingeniería" required>
+        <label for="ingenieria">Ingeniería</label><br>
+        <input type="radio" id="economia" name="programa" value="Economía" required>
+        <label for="economia">Economía</label><br>
+        <input type="radio" id="artes" name="programa" value="Artes" required>
+        <label for="artes">Artes</label><br>
+        <input type="radio" id="otro" name="programa" value="Otro" required>
+        <label for="otro">Otro</label><br><br>
+
+        <label for="monto-prestamo">Monto del Préstamo Solicitado:</label>
+        <input type="text" id="monto-prestamo" name="monto-prestamo" required><br><br>
+
+        <label for="razon-prestamo">Razón para Solicitar el Préstamo:</label><br>
+        <textarea id="razon-prestamo" name="razon-prestamo" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
