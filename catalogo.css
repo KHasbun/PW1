@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 16px; /* Espacio entre los botones */
+}
+
+header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del enlace igual al texto circundante */
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+        
+
+
+        /*catalogo*/
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .producto {
+            background: white;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .producto img {
+            width: 100%;
+            max-height: 300px;
+            height: max-content;
+            height: 300px;
+            border-bottom: 1px solid #ddd;
+        }
+        .producto h3 {
+            text-align: center;
+            color: #333;
+        }
+        .producto p {
+            padding: 0 15px 15px;
+            color: #666;
+        }
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+
+/*footer*/
+
+        footer {
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* Ajusta la altura del footer según sea necesario */
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        img {
+            width: 24px; /* Ajusta el tamaño del ícono según sea necesario */
+            height: 24px;
+            margin-right: 8px; /* Espacio entre el ícono y el enlace */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Mantiene el color del enlace igual al texto circundante */
+        }
