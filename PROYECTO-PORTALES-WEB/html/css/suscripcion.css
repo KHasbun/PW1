@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* Estilos Generales */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+  position: fixed; /* Fijo en la parte superior */
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+header .logo img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+  text-align: left;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 15px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.5s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+/* Tarjetas de Suscripción */
+.subscriptions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Botón de Suscribirse */
+.subscribe-button {
+  text-align: center;
+  margin-top: auto;
+}
+
+.subscribe-button button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  color: black;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button button:hover {
+  background-color: grey;
+}
+
+/* Pie de página */
+footer {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 40px;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Tarjetas de Suscripción */
+#basic {
+  background-color: grey;
+}
+
+#premium {
+  background-color: gold;
+}
+
+#family {
+  background-color: green;
+}

@@ -1,0 +1,157 @@
+/* Estilos Generales */
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+header .logo img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+  text-align: left;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 15px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.5s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Espaciado para el contenido */
+main {
+  padding-top: 100px;
+}
+
+/* Catálogo de Productos */
+.product-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 30%;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.product-info {
+  text-align: left;
+  width: 100%;
+}
+
+.product-info h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+/* Botón de Pre ordenar */
+.pre-order-btn {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pre-order-btn:hover {
+  background-color: #e6b800;
+}
+
+/* Pie de página */
+footer {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 40px;
+  width: 100%;
+  bottom: 0;
+}

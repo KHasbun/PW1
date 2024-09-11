@@ -1,0 +1,291 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+header .logo img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+  text-align: left;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 15px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.5s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Background */
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  display: flex;
+  overflow: hidden;
+}
+
+.fondo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  animation: slide 30s infinite;
+}
+
+.fondo img:nth-child(1) {
+  animation-delay: 0s;
+}
+.fondo img:nth-child(2) {
+  animation-delay: 5s;
+}
+.fondo img:nth-child(3) {
+  animation-delay: 10s;
+}
+.fondo img:nth-child(4) {
+  animation-delay: 15s;
+}
+.fondo img:nth-child(5) {
+  animation-delay: 20s;
+}
+.fondo img:nth-child(6) {
+  animation-delay: 25s;
+}
+
+/* Animations */
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  43.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Overlay */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Main Content */
+main {
+  margin-top: 60px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Navigation Menu */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+nav.menu.show {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  nav.menu {
+    display: flex;
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    flex-direction: row;
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.faq-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.faq-form {
+  margin-top: 20px;
+}
+
+.faq-form input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.faq-form button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* FAQ Image */
+.faq-image {
+  margin-top: 20px;
+}
+
+.faq-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 40px;
+  width: 100%;
+  bottom: 0;
+}
